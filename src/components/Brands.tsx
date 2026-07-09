@@ -13,8 +13,12 @@ interface BrandCardProps {
 }
 
 const brands: Brand[] = [
-  { name: "GNC India", cat: "Health & Wellness" },
   { name: "HouseEazy", cat: "Prop Tech" },
+  { name: "HouseCanvas", cat: "Interior Designing" },
+  { name: "GNC India", cat: "Health & Wellness" },
+  { name: "One8 Commune", cat: "Fashion" },
+  { name: "Snitch", cat: "Fashion" },
+
   { name: "Forever New India", cat: "Fashion & Lifestyle" },
   { name: "Hyundai India", cat: "Automotive" },
   { name: "MPL", cat: "Gaming & Sports" },
@@ -27,6 +31,8 @@ const brands: Brand[] = [
   { name: "Alcis Sports", cat: "Sportswear" },
   { name: "London Essence Co.", cat: "Premium Beverages" },
   { name: "Britvic Mixers", cat: "Beverages" },
+  { name: "Parker Pens", cat: "Consumer Goods" },
+  { name: "Gulshan Group", cat: "Real Estate" },
 ];
 
 function BrandCard({ brand, delay }: BrandCardProps) {
@@ -98,7 +104,7 @@ export default function Brands() {
         style={{
           display: "grid",
           gridTemplateColumns:
-            "repeat(auto-fill, minmax(min(100%, 140px), 1fr))",
+            "repeat(auto-fill, minmax(min(100%, 190px), 1fr))",
           gap: 2,
         }}
       >

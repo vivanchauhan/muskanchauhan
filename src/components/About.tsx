@@ -4,11 +4,13 @@ import React, { useEffect, useState } from "react";
 import { supabase } from "@/utils/supabase";
 
 const skills = [
+  ["Brand Strategy", "95%"],
   ["Social Media Marketing", "95%"],
-  ["Brand Strategy", "90%"],
   ["Content Creation", "92%"],
-  ["Email Marketing", "85%"],
-  ["Client Servicing", "96%"],
+  ["Performance Marketing", "90%"],
+  ["Influencer Marketing", "96%"],
+  ["Content Marketing", "90%"],
+  ["Project Management", "90%"],
 ];
 
 interface AboutData {
@@ -100,6 +102,8 @@ export default function About() {
       mounted = false;
     };
   }, []);
+
+  console.log("About state:", data); //debug log
 
   if (!data) {
     return (
@@ -207,7 +211,7 @@ export default function About() {
         }}
       >
         {/* Photo Container */}
-        <div className="reveal">
+        <div>
           <div style={{ position: "relative" }}>
             <div
               style={{
@@ -277,7 +281,7 @@ export default function About() {
         </div>
 
         {/* Text Content */}
-        <div className="reveal" style={{ transitionDelay: ".15s" }}>
+        <div style={{ transitionDelay: ".15s" }}>
           <div
             style={{
               fontFamily: "'Playfair Display', serif",

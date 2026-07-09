@@ -115,7 +115,7 @@ export default function Experience() {
       <div className="sec-label">02 — Experience</div>
 
       {/* Dynamic Main Section Title */}
-      <div className="sec-title reveal">
+      <div className="sec-title ">
         <HighlightedText text={data?.title_years || "6 Years of"} />
         <br />
         <em style={{ fontStyle: "italic", color: "var(--purple)" }}>
@@ -141,7 +141,6 @@ export default function Experience() {
         {visibleJobs.map((job, i) => (
           <div
             key={`${job.company}-${i}`}
-            className="reveal"
             style={{
               position: "relative",
               marginBottom: 52,

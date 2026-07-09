@@ -51,7 +51,7 @@ export default function Navbar() {
             zIndex: 101,
           }}
         >
-          Muskan<span style={{ color: "var(--purple)" }}>.</span>
+          Quietly Loud<span style={{ color: "var(--purple)" }}>.</span>
         </a>
 
         {/* Desktop links */}

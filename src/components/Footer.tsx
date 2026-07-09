@@ -58,7 +58,7 @@ export default function Footer() {
           userSelect: "none",
         }}
       >
-        © {currentYear} — Brand & Social Media Strategist
+        © {currentYear} — Brand Marketing Manager
       </div>
 
       <div

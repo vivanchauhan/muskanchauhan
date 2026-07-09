@@ -244,7 +244,7 @@ export default function Hero() {
                   animation: "slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) both",
                 }}
               >
-                <HighlightedText text={dbData?.title_line1 || "Muskan"} />
+                <HighlightedText text={dbData?.title_line1 || "Muskan."} />
               </span>
             </span>
             <span style={{ overflow: "hidden", display: "block" }}>
